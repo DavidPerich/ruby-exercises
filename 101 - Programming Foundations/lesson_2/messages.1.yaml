@@ -1,0 +1,9 @@
+welcome: 'welcome to the calculator! Enter your name:' 
+valid_name: "make sure you use a valid name" 
+first_number: 'what is the first number? ' 
+number_error:  "that isn't a number"
+second_number: 'what is the second number?' 
+operator_error:  'please write a proper command. pleaasee'
+operation_message: "#{operation_to_message(operator)} the two numbers together" 
+go_again: "do you want to go again (Y/N?)"
+thanks:  'cheers fellas'

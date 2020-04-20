@@ -1,0 +1,65 @@
+=begin 
+Write a method that takes a string as an argument,
+and returns an Array that contains every word from the string, to which you have appended a space and the word length.
+
+You may assume that words in the string are separated by exactly one space, and that any substring of non-space characters is a word.
+
+Examples
+=end 
+
+# input is a string. output is a an array. 
+# Output array has every string plus a space and its length. 
+
+# define method 
+# saving the results of calling string.split into a results array.
+# Call map on teh results array and for each word in the array concataenate (sp) a space and the word size
+
+def word_lengths(string)
+  results = string.split
+  results.map {|word| word + " #{word.size.to_s}"}
+end 
+
+
+p word_lengths("cow sheep chicken") == ["cow 3", "sheep 5", "chicken 7"]
+
+p word_lengths("baseball hot dogs and apple pie") ==
+  ["baseball 8", "hot 3", "dogs 4", "and 3", "apple 5", "pie 3"]
+
+p word_lengths("It ain't easy, is it?") == ["It 2", "ain't 5", "easy, 5", "is 2", "it? 3"]
+
+p word_lengths("Supercalifragilisticexpialidocious") ==
+  ["Supercalifragilisticexpialidocious 34"]
+
+p word_lengths("") == []
+
+
+
+
+
+
+# def word_lengths string
+#   array = string.split " "
+#   array.map {|x| x <<" #{x.length.to_s}"}
+# end 
+
+# =begin 
+# their solution 
+
+# def word_lengths(string)
+#   string.split.map { |word| "#{word} #{word.length}" }
+# end
+
+# =end 
+
+
+# p word_lengths("cow sheep chicken") == ["cow 3", "sheep 5", "chicken 7"]
+
+# p word_lengths("baseball hot dogs and apple pie") ==
+#   ["baseball 8", "hot 3", "dogs 4", "and 3", "apple 5", "pie 3"]
+
+# p word_lengths("It ain't easy, is it?") == ["It 2", "ain't 5", "easy, 5", "is 2", "it? 3"]
+
+# p word_lengths("Supercalifragilisticexpialidocious") ==
+#   ["Supercalifragilisticexpialidocious 34"]
+
+# p word_lengths("") == []

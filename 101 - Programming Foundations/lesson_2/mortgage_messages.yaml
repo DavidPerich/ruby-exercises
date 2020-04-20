@@ -1,0 +1,12 @@
+welcome: 'welcome to the calculator! Enter your name:' 
+intro: "this tool will take you your loan information and figure out what you rmonthly repayments are"
+valid_name: "make sure you use a valid name" 
+first_number: 'what is the first number? ' 
+number_error:  "That doesn't look like a number. Please try put your principal again. "
+interest_rate: 'Alright, what is the interest rate?' 
+interest_error:  'Something looks wrong about that interest rate. Please try again.'
+loan_years: "Great! How many years is the loan for?"
+years_error: "That doens't look like a number of years... please write your yeras in numbers"
+operation_message: "#{operation_to_message(operator)} the two numbers together" 
+go_again: "do you want to go again (Y/N?)"
+thanks:  'cheers fellas'
